@@ -13,5 +13,5 @@ GIT внесение изменений
 - Ctrl+s, Ctrl+x.
 - $ git add Readme.md – добавляем файл.
 - $ git commit -m "add readme.md" – коммитим.
-- $ git push origin – добавляем в удаленный репо.
+- $ git push --all – добавляем в удаленный репо.
 
