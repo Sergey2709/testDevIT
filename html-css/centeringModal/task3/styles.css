@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: rgb(146, 143, 143);
+  transform: translate(-50%, -50%);
+}

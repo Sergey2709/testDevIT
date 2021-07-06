@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="modal">
+        <div class="modal__content">
+            <div class="create-event">
+                <button class="create-event__close-btn">+</button>
+                <form class="event-form">
+                    <input type="text" name="title" placeholder="Title" class="event-form__field" />
+                    <div class="event-form__time">
+                        <input type="date" name="date" class="event-form__field" />
+                        <input type="time" name="startTime" class="event-form__field" />
+                        <span>-</span>
+                        <input type="time" name="endTime" class="event-form__field" />
+                    </div>
+                    <textarea name="description" placeholder="Description" class="event-form__field"></textarea>
+                    <button type="submit" class="event-form__submit-btn">Create</button>
+                </form>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

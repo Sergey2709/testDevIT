@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element {
+  width: 20vw;
+  height: 20vh;
+  background-color: #fd0202;
+}

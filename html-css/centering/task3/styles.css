@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.element {
+  width: 20vw;
+  height: 20vh;
+  background-color: #fd0202;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
