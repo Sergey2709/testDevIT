@@ -1,0 +1,27 @@
+db.createCollection("users") - создаем БД
+
+doc1=({
+...   "properties": {
+...     "_id": { "bsonType": "objectId" },
+...     "title": { "bsonType": "Hello" },
+...     "content": { "bsonType": "Hello1" },
+...     "author": { "bsonType": "Sergey" },
+...     "like": { "bsonType": "100" },
+...     "dislike": { "bsonType": "199" }
+...   }
+... }) - создаем документ
+
+db.posts.insert(doc1) - добавляем его в БД, и так несколько...
+
+1 - db.posts.find().skip(5).limit(5) - выводим 5 элементов пропустив первых 5
+2 - fn = function() { return this.properties.like.bsonType > 100; }
+    db.posts.find(fn) - находим записи с лайками больше 100.
+3 - db.posts.insert(doc1) - добавляем его в БД.
+4 - > var cursor = db.posts.find()
+    > cursor.forEach(function(obj){
+    ... if (obj.properties.like.bsonType > 100){
+    ... print (obj.properties.author.bsonType, obj.properties.like.bsonType);
+    ... }})
+    Sergey
+    Sergey
+    Sergey
