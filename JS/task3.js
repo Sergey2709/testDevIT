@@ -14,4 +14,4 @@ function reliableMultiply(a, b) {
 }
 
 console.log(reliableMultiply(8, 8));
-// console.log(typeof (primitiveMultiply(8, 8)));
+

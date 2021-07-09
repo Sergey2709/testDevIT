@@ -7,4 +7,4 @@ const flatArr = arrays.reduce((acc, el) => {
 }, [])
 // → [1, 2, 3, 4, 5, 6]
 
-// console.log(flatArr);
+console.log(flatArr);
